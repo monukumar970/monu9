@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 20px rgb(207, 232, 78);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    
+}
+
+.container{
+    position: relative;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: transparent;
+    backdrop-filter: blur(150px);
+    border: 2px solid rgba(0, 0, 0, 0.1.1);
+    box-shadow: 0px 0px 40px rgba(81, 1, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    color: rgb(255, 255, 255);
+    inset: 12px;
+    text-align: center;
+}
+.clock span b{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 20px;
+    text-shadow: peachpuff;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color: var(--clr);
+    width: 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(0, 157, 255);
+    height: var(--h);
+    border-radius: 8px;
+}
+.container-p{
+    width: 100px;
+    height: 100px;
+    background-image: url('imge.jpg');
+    background-color: rgb(255, 255, 255);
+    background-size: 100px;
+    border-radius: 150px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+profile-box{
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+}
+
+.container-h{
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    color: rgb(236, 226, 226);
+
+}
+
+.container-J{
+    position: absolute;
+    top: 20px;
+    left: 560px;
+    color: rgb(255, 255, 255);
+
+}
+
+.container-k{
+    position: absolute;
+    top: 200px;
+    left: 950px;
+    color: rgb(255, 254, 254);
+
+}
